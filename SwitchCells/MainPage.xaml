@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwitchCells.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Switch IsToggled="{Binding SwitchCellBinding}" />
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection>
+                        <SwitchCell Text="Click me" On="{Binding SwitchCellBinding}" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
